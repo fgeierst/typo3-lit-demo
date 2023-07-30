@@ -80,6 +80,16 @@ Stored in *packages/site-distribution/Resources/Public/Components*
 ```html
 <typo3lit-header> <!-- ... --> </typo3lit-header>
 ```
+
+### Component explorer
+
+Preview and develop the components in isolation using mock data with [Storybook](https://storybook.js.org/docs/web-components/).
+
+```
+npm run storybook
+```
+
+
 ## Shoelace web components
 
 Imported in *assets/JavaScript/app.js*
@@ -87,6 +97,8 @@ Imported in *assets/JavaScript/app.js*
 ```html
     <sl-button href="#">Link Button</sl-button>
 ```
+
+
 
 ## Documentation
 
