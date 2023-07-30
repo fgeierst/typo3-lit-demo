@@ -1,7 +1,6 @@
 import {defineConfig} from 'vite'
 import svgLoader from 'vite-svg-loader'
 import {viteStaticCopy} from 'vite-plugin-static-copy'
-import autoprefixer from 'autoprefixer'
 import * as path from "path";
 
 export default defineConfig(({command, mode}) => {
@@ -27,19 +26,16 @@ export default defineConfig(({command, mode}) => {
         input: 'assets/JavaScript/app.js',
       },
       outDir: 'packages/site-distribution/Resources/Public/',
+      cssMinify: 'lightningcss',
     },
     css: {
+      transformer: 'lightningcss',
+      lightningcss: {
+        drafts: {
+          nesting: true,
+        }
+      },
       devSourcemap: true,
-      postcss: {
-        plugins: [
-          autoprefixer({}) // add options if needed
-        ],
-      },
-      preprocessorOptions: {
-        scss: {
-          additionalData: `$mode: ${mode};`,
-        },
-      },
     },
     server: {
       origin: `${process.env.DDEV_PRIMARY_URL}:${process.env.VITE_PRIMARY_PORT}/`,
