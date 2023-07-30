@@ -40,7 +40,6 @@ ddev composer dumpautoload
 ```
 ddev get torenware/ddev-viteserve
 ddev restart
-ddev vite-serve start
 ```
 
 ## Files and folders
@@ -58,19 +57,18 @@ The frontend toolchain uses NPM and Vite.js with a few loaders to ...
   * Bundle javascript (`assets/JavaScript`)
   * Copy images (`assets/Image`) and fonts (`assets/Fonts`) to the Public folder of EXT:site-distribution
 
-Watch for changes in js/css files:
+The Vite dev server is automatically started with `ddev start`.
+
+To test the production build, first stop the Vite dev server with `ddev vite-serve start`. Then...
+
+...build JS, CSS for development use (not compressed/optimized):
 ```
-npm run watch
+ddev npm run build:development
 ```
 
-Build JS, CSS for development use (not compressed/optimized):
+...build JS, CSS for production use:
 ```
-npm run build:development
-```
-
-Build JS, CSS for production use:
-```
-npm run build:production
+ddev npm run build:production
 ```
 
 ## Lit web components

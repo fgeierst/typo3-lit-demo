@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "92b5daa7bb8a07a50e1c1f4566bb0595",
+    "content-hash": "f1ded1b0ce2566fa7b468683784ed384",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1234,77 +1234,6 @@
                 }
             ],
             "time": "2023-04-17T16:11:26+00:00"
-        },
-        {
-            "name": "helhum/dotenv-connector",
-            "version": "v3.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/helhum/dotenv-connector.git",
-                "reference": "d95a808e9ff408116800eb60cd820bd9ff4d5b46"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/helhum/dotenv-connector/zipball/d95a808e9ff408116800eb60cd820bd9ff4d5b46",
-                "reference": "d95a808e9ff408116800eb60cd820bd9ff4d5b46",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0 || ^2.0",
-                "php": ">=7.2",
-                "symfony/dotenv": "^5.1"
-            },
-            "require-dev": {
-                "composer/composer": "^1.0 || 2.0.*@dev",
-                "composer/semver": "^1.0 || ^2.0 || 3.0.*@dev",
-                "mikey179/vfsstream": "^1.6.0",
-                "phpunit/phpunit": "^5"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "Helhum\\DotEnvConnector\\Plugin",
-                "branch-alias": {
-                    "dev-latest": "3.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Helhum\\DotEnvConnector\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Helmut Hummel",
-                    "email": "info@helhum.io"
-                }
-            ],
-            "description": "Makes it possible to set environment variables for composer projects.",
-            "homepage": "https://github.com/helhum/dotenv-connector",
-            "keywords": [
-                "12factor",
-                "composer",
-                "dotenv",
-                "env"
-            ],
-            "support": {
-                "issues": "https://github.com/helhum/dotenv-connector/issues",
-                "source": "https://github.com/helhum/dotenv-connector/tree/v3.0.1"
-            },
-            "funding": [
-                {
-                    "url": "https://www.paypal.me/helhum/19.99",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/helhum",
-                    "type": "github"
-                }
-            ],
-            "time": "2021-10-06T09:02:51+00:00"
         },
         {
             "name": "lolli42/finediff",
@@ -3033,77 +2962,6 @@
                 }
             ],
             "time": "2023-06-24T11:51:27+00:00"
-        },
-        {
-            "name": "symfony/dotenv",
-            "version": "v5.4.22",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/dotenv.git",
-                "reference": "77b7660bfcb85e8f28287d557d7af0046bcd2ca3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dotenv/zipball/77b7660bfcb85e8f28287d557d7af0046bcd2ca3",
-                "reference": "77b7660bfcb85e8f28287d557d7af0046bcd2ca3",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2.5",
-                "symfony/deprecation-contracts": "^2.1|^3"
-            },
-            "require-dev": {
-                "symfony/console": "^4.4|^5.0|^6.0",
-                "symfony/process": "^4.4|^5.0|^6.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Dotenv\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Registers environment variables from a .env file",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "dotenv",
-                "env",
-                "environment"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/dotenv/tree/v5.4.22"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2023-03-09T20:36:58+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -7007,7 +6865,7 @@
         },
         {
             "name": "typo3/site-distribution",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "packages/site-distribution",
