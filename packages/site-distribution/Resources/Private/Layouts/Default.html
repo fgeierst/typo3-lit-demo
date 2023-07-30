@@ -1,19 +1,21 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-<typo3lit-header>
+<tl-header>
 
     <f:link.page pageUid="1" title="{f:translate(extensionName: 'site-distribution', key: 'logo.label')}" additionalAttributes="{slot: 'logo'}" >
         <core:icon identifier="site-logo" size="large" />
     </f:link.page>
 
-    <nav class="menu-container">
-        <ul class="menu js-menu">
-            <f:for each="{mainNavigation}" as="item">
-                <f:render partial="Menu" arguments="{item}"/>
-            </f:for>
-        </ul>
-    </nav>
-</typo3lit-header>
+    <tl-nav>
+        <f:for each="{mainNavigation}" as="item">
+            <tl-nav-item slot="item" {f:if(condition: '{item.active}', then: 'active')}>
+                <a href="{item.link}">
+                    {item.title}
+                </a>
+            </tl-nav-item>
+        </f:for>
+    </tl-nav>
+</tl-header>
 
 <div class="content">
     <f:render section="Main"/>

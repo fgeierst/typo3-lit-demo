@@ -4,6 +4,8 @@ import "../Css/app.css";
 // Lit components
 
 import "../../packages/site-distribution/Resources/Private/Components/header/header.ts";
+import "../../packages/site-distribution/Resources/Private/Components/nav/nav.ts";
+import "../../packages/site-distribution/Resources/Private/Components/nav-item/nav-item.ts";
 
 // Use vite-svg-loader, see https://www.npmjs.com/package/vite-svg-loader#user-content-import-params
 // import typo3Logo from '../Image/Icon/typo3.svg?url'
