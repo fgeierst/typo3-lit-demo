@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration-thickness: max(0.08em, 1px);
+	text-underline-offset: 0.15em;
+}

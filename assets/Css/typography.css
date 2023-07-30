@@ -1,0 +1,21 @@
+@font-face {
+	font-family: "Nunito Sans";
+	src: url("../Fonts/NunitoSans-Variable.woff2");
+	font-style: normal;
+	font-weight: 200 1000;
+	font-stretch: 75% 125%;
+	unicode-range: U+0000, U+000D, U+0020-007E, U+00A0-00FF, U+0131,
+	U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2007-200B, U+2010,
+	U+2012-2015, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030,
+	U+2032-2033, U+2039-203A, U+2044, U+2052, U+2074, U+20AC, U+2122,
+	U+2212, U+2215;
+	font-display: swap;
+}
+
+body {
+	font-family: "Nunito Sans", sans-serif;
+}
+
+p {
+	line-height: 1.3;
+}

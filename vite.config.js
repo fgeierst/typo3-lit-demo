@@ -42,7 +42,7 @@ export default defineConfig(({command, mode}) => {
       devSourcemap: true,
     },
     server: {
-      origin: `${process.env.DDEV_PRIMARY_URL}:${process.env.VITE_PRIMARY_PORT}/`,
+      origin: `${process.env.DDEV_PRIMARY_URL}:${process.env.VITE_PRIMARY_PORT}`,
     },
   }
 });

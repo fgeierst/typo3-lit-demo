@@ -3,6 +3,9 @@
 	<file source-language="en" datatype="plaintext" original="EXT:site-distribution/Resources/Private/Language/locallang.xlf" date="2023-05-16:00:00Z" product-name="site-distribution">
 		<header/>
 		<body>
+			<trans-unit id="logo.label">
+				<source>Homepage</source>
+			</trans-unit>
 			<trans-unit id="site-distribution.welcome" resname="site-distribution.welcome">
 				<source>Welcome to TYPO3</source>
 			</trans-unit>

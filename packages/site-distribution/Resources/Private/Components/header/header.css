@@ -1,3 +1,11 @@
 header {
-    background-color: pink;
+    --_padding-inline: var(--space-200, 2rem);
+
+    padding-inline: var(--_padding-inline);
+		max-height: var(--space-400, 4rem);
+}
+
+.container {
+	display: flex;
+	align-items: center;
 }

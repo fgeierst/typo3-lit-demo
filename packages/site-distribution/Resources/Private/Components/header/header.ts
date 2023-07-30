@@ -16,8 +16,13 @@ export class Header extends LitElement {
 	render() {
 		return html`
       <header>
-        <slot></slot>
-      </header>
+				<div class="container">
+					<div class="logo">
+						<slot name="logo"></slot>
+					</div>
+        	<slot></slot>
+				</div>
+			</header>
 		`;
 	}
 }
