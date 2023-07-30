@@ -27,7 +27,7 @@ export default defineConfig(({command, mode}) => {
       manifest: true,
       target: 'es2020',
       rollupOptions: {
-        input: 'assets/JavaScript/app.js',
+        input: 'assets/JavaScript/app.ts',
       },
       outDir: 'packages/site-distribution/Resources/Public/',
       cssMinify: 'lightningcss',

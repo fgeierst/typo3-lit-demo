@@ -1,7 +1,7 @@
 {
   "name": "typo3-lit-demo",
   "version": "1.0.0",
-  "main": "assets/JavaScript/app.js",
+  "main": "assets/JavaScript/app.ts",
   "author": "fgeierst",
   "type": "module",
   "scripts": {

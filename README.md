@@ -90,7 +90,7 @@ pnpm run storybook
 
 ## Shoelace web components
 
-Imported in *assets/JavaScript/app.js*
+Imported in *assets/JavaScript/app.ts*
 
 ```html
     <sl-button href="#">Link Button</sl-button>
