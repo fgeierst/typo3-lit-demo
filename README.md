@@ -3,6 +3,8 @@
 - Demo how to scaffold Lit Web Components as building blocks for a TYPO3 frontend
 - Based on GitLab TYPO3 Distribution
 
+<img src="screenshot.png" alt="Browser screenshot of website. Two parts are highlighted, a lit webcomponent and a showlace component." width="300"/>
+
 ## Quickstart
 
 Use this command to set up the template
