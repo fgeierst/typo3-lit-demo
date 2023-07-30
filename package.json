@@ -11,10 +11,6 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
-  "engines": {
-    "node": "~18",
-    "npm": "~9"
-  },
   "dependencies": {
     "@shoelace-style/shoelace": "^2.5.2",
     "autoprefixer": "^10.4.14",
