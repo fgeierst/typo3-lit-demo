@@ -15,6 +15,10 @@ export default defineConfig(({command, mode}) => {
             dest: 'Image'
           },
           {
+            src: path.resolve(__dirname, './assets/Fonts') + '/[!.]*',
+            dest: 'Fonts'
+          },
+          {
             src: path.resolve(__dirname, 'node_modules/@shoelace-style/shoelace/dist/assets'),
             dest: path.resolve(__dirname, 'packages/site-distribution/Resources/Public/assets/shoelace')
           }

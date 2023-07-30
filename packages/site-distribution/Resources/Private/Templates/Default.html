@@ -6,6 +6,16 @@
 
 <f:layout name="{f:if(condition: '{layout}', then: '{layout}', else: 'Default')}"/>
 
+<f:section name="HeaderAssets">
+    <link rel="preload" href="{vac:resource.vite(file: 'assets/Fonts/NunitoSans-Variable.woff2', manifest='EXT:site-distribution/Resources/Public/manifest.json')}" as="font" type="font/woff2" crossorigin />
+
+    <vac:asset.vite
+    manifest="EXT:site-distribution/Resources/Public/manifest.json"
+    entry="assets/JavaScript/app.ts"
+    priority="1"
+    />
+</f:section>
+
 <f:section name="Main">
 
     <!-- Example usage of Shoelace components -->
@@ -18,14 +28,6 @@
         <f:format.html parseFuncTSPath="lib.parseFunc">{normal}</f:format.html>
     </main>
 
-</f:section>
-
-<f:section name="FooterAssets">
-    <vac:asset.vite
-        manifest="EXT:site-distribution/Resources/Public/manifest.json"
-        entry="assets/JavaScript/app.ts"
-        priority="1"
-    />
 </f:section>
 
 </html>
