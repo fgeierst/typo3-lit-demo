@@ -23,7 +23,7 @@ export const Default: Story = {
 			<tl-nav-item slot="item">
 				Second Item
 			</tl-nav-item>
-			<tl-nav-item slot="item">
+			<tl-nav-item slot="item" active>
 				Third Item
 			</tl-nav-item>
 		</tl-nav>

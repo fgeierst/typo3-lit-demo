@@ -15,3 +15,9 @@ export const Default: Story = {
 		Nav Item
 	</tl-nav-item>`,
 };
+
+export const Active: Story = {
+	render: () => html`<tl-nav-item active>
+		Nav Item
+	</tl-nav-item>`,
+};
