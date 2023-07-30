@@ -26,5 +26,8 @@
   },
   "devDependencies": {
     "lightningcss": "^1.21.5"
-  }
+  },
+	"browserslist": [
+    "last 2 versions"
+  ]
 }
