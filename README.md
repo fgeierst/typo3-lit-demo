@@ -24,8 +24,8 @@ ddev typo3 setup
 Prepare and build frontend:
 
 ```
-ddev npm install
-ddev npm run build:production
+ddev pnpm install
+ddev pnpm build:production
 ```
 
 Initialize data (page tree and link assets):
@@ -63,12 +63,12 @@ To test the production build, first stop the Vite dev server with `ddev vite-ser
 
 ...build JS, CSS for development use (not compressed/optimized):
 ```
-ddev npm run build:development
+ddev pnpm build:development
 ```
 
 ...build JS, CSS for production use:
 ```
-ddev npm run build:production
+ddev pnpm build:production
 ```
 
 ## Lit web components
@@ -84,7 +84,7 @@ Stored in *packages/site-distribution/Resources/Public/Components*
 Preview and develop the components in isolation using mock data with [Storybook](https://storybook.js.org/docs/web-components/).
 
 ```
-npm run storybook
+pnpm run storybook
 ```
 
 
