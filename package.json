@@ -15,6 +15,7 @@
     "npm": "~9"
   },
   "dependencies": {
+    "@shoelace-style/shoelace": "^2.5.2",
     "autoprefixer": "^10.4.14",
     "lit": "^2.7.6",
     "postcss-loader": "^7.3.0",

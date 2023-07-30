@@ -13,6 +13,10 @@ export default defineConfig(({command, mode}) => {
           {
             src: path.resolve(__dirname, './assets/Image') + '/[!.]*',
             dest: 'Image'
+          },
+          {
+            src: path.resolve(__dirname, 'node_modules/@shoelace-style/shoelace/dist/assets'),
+            dest: path.resolve(__dirname, 'packages/site-distribution/Resources/Public/assets/shoelace')
           }
         ]
       })

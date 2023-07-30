@@ -1,6 +1,6 @@
 # TYPO3 Lit Demo
 
-- Initital demo to test Lit Web Components, Vite and TYPO3
+- Demo how to scaffold Lit Web Components as building blocks for a TYPO3 frontend
 - Based on GitLab TYPO3 Distribution
 
 ## Quickstart
@@ -71,7 +71,20 @@ Build JS, CSS for production use:
 npm run build:production
 ```
 
+## Lit web components
 
+Stored in *packages/site-distribution/Resources/Public/Components*
+
+```html
+<typo3lit-header> <!-- ... --> </typo3lit-header>
+```
+## Shoelace web components
+
+Imported in *assets/JavaScript/app.js*
+
+```html
+    <sl-button href="#">Link Button</sl-button>
+```
 
 ## Documentation
 
@@ -81,4 +94,5 @@ npm run build:production
   * Vite - https://vitejs.dev/
   * LightningCSS - https://lightningcss.dev/
   * Lit - https://lit.dev/docs/
+  * Shoelace https://shoelace.style/
 
