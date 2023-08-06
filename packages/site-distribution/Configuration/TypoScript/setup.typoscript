@@ -64,3 +64,17 @@ page {
     }
   }
 }
+
+plugin.tx_sitedistribution {
+  view {
+    templateRootPaths {
+      1 = EXT:site-distribution/Resources/Private/Templates/
+    }
+    partialRootPaths {
+      1 = EXT:site-distribution/Resources/Private/Partials/
+    }
+    layoutRootPaths {
+      1 = EXT:site-distribution/Resources/Private/Layouts/
+    }
+  }
+}

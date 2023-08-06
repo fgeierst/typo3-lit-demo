@@ -44,7 +44,7 @@
 		"typo3/cms-t3editor": "^12",
 		"typo3/cms-tstemplate": "^12",
 		"typo3/cms-viewpage": "^12",
-		"typo3/site-distribution": "@dev"
+		"fgeierst/site-distribution": "@dev"
 	},
 	"require-dev": {
 		"deployer/deployer": "^7.0",

@@ -1,11 +1,11 @@
 {
-  "name": "typo3/site-distribution",
+  "name": "fgeierst/site-distribution",
   "type": "typo3-cms-extension",
   "description" : "TYPO3 CMS Distribution - Site Distribution Package",
   "license": "GPL-2.0-or-later",
   "autoload": {
     "psr-4": {
-      "Site\\Distribution\\": "Classes/"
+      "fgeierst\\SiteDistribution\\": "Classes"
     }
   },
   "extra": {

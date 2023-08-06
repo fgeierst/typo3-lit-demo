@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+        sitedistribution_teaser {
+            iconIdentifier = site-logo
+            title = Teaser content element
+            description = Basic teaser
+            tt_content_defValues {
+                CType = sitedistribution_teaser
+            }
+        }
+    }
+    show := addToList(sitedistribution_teaser)
+}
