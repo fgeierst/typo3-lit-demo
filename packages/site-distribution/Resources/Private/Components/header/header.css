@@ -1,12 +1,27 @@
-header {
-    --_padding-inline: var(--space-200, 2rem);
+*, *::before, *::after {
+	box-sizing: border-box;
+}
 
-    padding-inline: var(--_padding-inline);
-		max-height: var(--space-400, 4rem);
+header {
+    --padding-inline: 0;
+		--background-color: transparent;
+		--color: black;
+		--border-block-end: 1px solid black;
+
+		box-sizing: border-box;
+    padding-inline: var(--_padding-inline, 0);
+		background-color: var(--background-color, transparent);
+		color: var(--color, black);
+		height: var(--space-400, 4rem);
+		border-block-end: var(--border-block-end, 1px solid black);
+		display: flex;
+		align-items: center;
 }
 
 .container {
 	display: flex;
 	align-items: center;
 	gap: var(--space-200, 2rem);
+	max-width: 800px;
+	margin-inline: auto;
 }

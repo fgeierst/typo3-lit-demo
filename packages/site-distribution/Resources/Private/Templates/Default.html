@@ -1,15 +1,15 @@
 <html
     data-namespace-typo3-fluid="true"
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-    xmlns:vac="http://typo3.org/ns/Praetorius/ViteAssetCollector/ViewHelpers"
+    xmlns:v="http://typo3.org/ns/Praetorius/ViteAssetCollector/ViewHelpers"
 >
 
 <f:layout name="{f:if(condition: '{layout}', then: '{layout}', else: 'Default')}"/>
 
 <f:section name="HeaderAssets">
-    <link rel="preload" href="{vac:resource.vite(file: 'assets/Fonts/NunitoSans-Variable.woff2', manifest='EXT:site-distribution/Resources/Public/manifest.json')}" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="{v:resource.vite(file: 'assets/Fonts/NunitoSans-Variable.woff2', manifest='EXT:site-distribution/Resources/Public/manifest.json')}" as="font" type="font/woff2" crossorigin />
 
-    <vac:asset.vite
+    <v:asset.vite
     manifest="EXT:site-distribution/Resources/Public/manifest.json"
     entry="assets/JavaScript/app.ts"
     priority="1"
@@ -21,9 +21,13 @@
     <!-- Example usage of Shoelace components -->
     <!-- <sl-rating label="Rating" precision="0.5" value="2.5"></sl-rating>
     <sl-button>Button</sl-button>
-    <sl-button href="#">Link Button</sl-button>
-    -->
-    <main role="main">
+    <sl-button href="#">Link Button</sl-button> -->
+
+    <main class="textcontent">
+        <!-- <tl-teaser>
+            <div slot="header">Teaser</div>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </tl-teaser> -->
         <h1>{data.title}</h1>
         <f:format.html parseFuncTSPath="lib.parseFunc">{normal}</f:format.html>
     </main>

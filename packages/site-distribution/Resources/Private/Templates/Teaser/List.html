@@ -1,4 +1,10 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
 <div class="teaser">
-    <div class="teaser__header">{data.header}</div>
-    <div class="teaser__subheader">{data.subheader}</div>
+    <tl-teaser>
+        <div slot="header">{data.header}</div>
+        {data.subheader}
+    </tl-teaser>
 </div>
+
+</html>

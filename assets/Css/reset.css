@@ -1,5 +1,15 @@
+/* Prevent Flash of Undefined Custom Elements */
+:not(:defined) {
+  visibility: hidden;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
 body {
     margin: 0;
+		font-size: clamp(1rem,.5rem + 1vw,1.25rem);
 }
 
 a {

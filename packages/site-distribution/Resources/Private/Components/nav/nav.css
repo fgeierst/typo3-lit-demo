@@ -3,5 +3,7 @@ ul {
 	margin-block: 0;
 	padding-inline-start: 0;
 	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 	gap: var(--space-100, 1rem);
 }

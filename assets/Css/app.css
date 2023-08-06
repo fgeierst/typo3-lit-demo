@@ -1,8 +1,6 @@
 @import "space.css";
 @import "reset.css";
 @import "typography.css";
+@import "grid.css";
 
-/* Prevent Flash of Undefined Custom Elements */
-:not(:defined) {
-  visibility: hidden;
-}
+

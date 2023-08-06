@@ -1,7 +1,7 @@
 mod.wizards.newContentElement.wizardItems.common {
     elements {
         sitedistribution_teaser {
-            iconIdentifier = site-logo
+            iconIdentifier = card
             title = Teaser content element
             description = Basic teaser
             tt_content_defValues {

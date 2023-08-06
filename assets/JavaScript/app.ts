@@ -6,9 +6,11 @@ import "../Css/app.css";
 import "../../packages/site-distribution/Resources/Private/Components/header/header";
 import "../../packages/site-distribution/Resources/Private/Components/nav/nav";
 import "../../packages/site-distribution/Resources/Private/Components/nav-item/nav-item";
+import "../../packages/site-distribution/Resources/Private/Components/teaser/teaser";
 
 // Use vite-svg-loader, see https://www.npmjs.com/package/vite-svg-loader#user-content-import-params
-// import typo3Logo from '../Image/Icon/typo3.svg?url'
+// import goat from '../Image/Icon/goat.svg?url'
+
 // document.querySelector('.js-made-with').innerHTML = 'Made with <img width="20px" height="20px" src="' + typo3Logo + '" alt="TYPO3">'
 
 // TYPO3.lang contains all available inline labels

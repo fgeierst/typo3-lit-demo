@@ -1,0 +1,22 @@
+<html
+    data-namespace-typo3-fluid="true"
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:v="http://typo3.org/ns/Praetorius/ViteAssetCollector/ViewHelpers"
+>
+
+<tl-header class="fullwidth">
+    <f:link.page pageUid="1" title="{f:translate(extensionName: 'site-distribution', key: 'logo.label')}" additionalAttributes="{slot: 'logo'}" >
+        <!-- <core:icon identifier="site-logo" size="large" /> -->
+        <f:image src="{f:uri.image(src: 'EXT:site-distribution/Resources/Public/Image/Icon/goat.svg')}"></f:image>
+    </f:link.page>
+
+    <tl-nav>
+        <f:for each="{mainNavigation}" as="item">
+            <tl-nav-item slot="item" {f:if(condition: '{item.active}', then: 'active')}>
+                <a href="{item.link}">
+                    {item.title}
+                </a>
+            </tl-nav-item>
+        </f:for>
+    </tl-nav>
+</tl-header>

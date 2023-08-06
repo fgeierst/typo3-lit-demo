@@ -1,3 +1,11 @@
 .active {
 	background-color: yellow;
 }
+
+::slotted(a) {
+	text-decoration: none;
+}
+
+::slotted(a:hover) {
+	text-decoration: underline;
+}
