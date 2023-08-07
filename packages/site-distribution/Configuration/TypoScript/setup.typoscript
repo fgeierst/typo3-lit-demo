@@ -78,3 +78,10 @@ plugin.tx_sitedistribution {
     }
   }
 }
+
+# Disable HTMLSanatize to allow web components like <my-component> in content element templates
+# @todo: A more fine grained solution to not disable sanatization completely,
+# see: https://docs.typo3.org/c/typo3/cms-core/main/en-us/Changelog/9.5.x/Important-94484-IntroduceHTMLSanitizer.html
+lib.parseFunc {
+      htmlSanitize = 0
+}
