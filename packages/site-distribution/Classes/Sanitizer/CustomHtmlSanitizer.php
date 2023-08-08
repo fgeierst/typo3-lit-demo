@@ -6,8 +6,6 @@ namespace fgeierst\SiteDistribution\Sanitizer;
 
 use TYPO3\CMS\Core\Html\DefaultSanitizerBuilder;
 use TYPO3\HtmlSanitizer\Behavior;
-use TYPO3\HtmlSanitizer\Behavior\Attr;
-use TYPO3\HtmlSanitizer\Behavior\Tag;
 
 class CustomHtmlSanitizer extends DefaultSanitizerBuilder
 {
