@@ -5,71 +5,34 @@
 
 <img src="screenshot.png" alt="Browser screenshot of website. Two parts are highlighted, a lit webcomponent and a showlace component." width="300"/>
 
-## Quickstart
+## Prerequisites
+- Docker Desktop or Colima
+- DDEV
+- Mutagen needs to be enabled for HMR
 
-Use this command to set up the template
+## Local installation guide
+    git clone https://github.com/fgeierst/typo3-lit-demo.git
+    cd typo3-lit-demo
+    ddev start
+    ddev composer install
+    ddev snapshot restore --latest
+    ddev pnpm install
+    ddev pnpm build:production
 
- * `ddev typo3-init`
+Login via https://typo3-lit-demo.ddev.site/typo3 using these credentials:
 
-## All commands - manual setup
+- Username: `admin`
+- Password: `Password.1`
 
-Configure ddev, install packages and start the ddev instance:
+## Start Vite development server
 
-```
-ddev start
-ddev composer install
-ddev typo3 setup
-```
+    ddev vite-serve start
 
-Prepare and build frontend:
+## Test the production build
 
-```
-ddev pnpm install
-ddev pnpm build:production
-```
+    ddev vite-serve stop
+    ddev pnpm build:production
 
-Initialize data (page tree and link assets):
-
-```
-ddev typo3 extension:setup
-ddev composer dumpautoload
-```
-
-## Use Vite.js [dev server for ddev](https://github.com/torenware/ddev-viteserve#getting-started)
-
-```
-ddev get torenware/ddev-viteserve
-ddev restart
-```
-
-## Files and folders
-
-The folder `packages` contains all your local extension/packages.
-Require these packages simply by using `composer req vendor/package:@dev`
-
-`assets` contains all scss, javascript, images and fonts which will be processed
-by [Vite.js](https://vitejs.dev/) and stored in `packages/site-distribution/Resources/Public/`.
-
-## Npm Scripts / Vite.js
-
-The frontend toolchain uses NPM and Vite.js with a few loaders to ...
-  * Compile Css to css (`assets/Css`)
-  * Bundle javascript (`assets/JavaScript`)
-  * Copy images (`assets/Image`) and fonts (`assets/Fonts`) to the Public folder of EXT:site-distribution
-
-The Vite dev server is automatically started with `ddev start`.
-
-To test the production build, first stop the Vite dev server with `ddev vite-serve start`. Then...
-
-...build JS, CSS for development use (not compressed/optimized):
-```
-ddev pnpm build:development
-```
-
-...build JS, CSS for production use:
-```
-ddev pnpm build:production
-```
 
 ## Lit web components
 
